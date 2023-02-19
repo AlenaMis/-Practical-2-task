@@ -9,6 +9,9 @@ Console.Clear();
 Console.WriteLine("Введите числo от 1 до 7, соответствующее дню недели");
 int n = Convert.ToInt32(Console.ReadLine());
 
+if (n > 7)
+    Console.WriteLine("Ошибка! Проверьте введеное число:)");
+
 if (n < 6) 
 {
     Console.WriteLine("Рабочий.");
@@ -18,5 +21,3 @@ else if (n == 6 || n == 7)
    Console.WriteLine("Выходной!)"); 
 }
 
-if (n > 7)
-    Console.WriteLine("Ошибка! Проверьте введеное число:)");
